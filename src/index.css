@@ -9,3 +9,9 @@
   justify-content: space-between;
   min-height: 100vh;
 }
+.img{
+  width: 100%;
+}
+.filter{
+  margin: 0 5px;
+}
