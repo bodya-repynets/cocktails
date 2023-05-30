@@ -17,6 +17,10 @@
 }
 .link{
   text-decoration: none;
+  color: black;
+}
+.link:hover{
+  color:cadetblue;
 }
 .question-mark{
   width: 300px;
