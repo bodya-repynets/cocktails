@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { Box, Button, Stack, Typography, Drawer, List, ListItem, ListItemButton, ListItemText } from "@mui/material";
+import {
+  Box,
+  Button,
+  Stack,
+  Typography,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -53,11 +62,6 @@ const Header = () => {
                 Home
               </Typography>
             </Link>
-            <Link to={"/about"} className="link">
-              <Typography variant="h6" color={"white"}>
-                About
-              </Typography>
-            </Link>
             <Link to={"/random"} className="link">
               <Typography variant="h6" color={"white"}>
                 Random cocktail
@@ -67,23 +71,37 @@ const Header = () => {
         </Box>
       </Box>
       <Drawer anchor={"top"} open={state} onClose={() => setState(!state)}>
-      <List>
+        <List>
           <ListItem>
-            <Link  to={'/'} onClick={() => setState(false)} className="link">
-              <ListItemText primaryTypographyProps={{fontSize: '1.5rem'}}>Home</ListItemText>
+            <Link to={"/"} onClick={() => setState(false)} className="link">
+              <ListItemText primaryTypographyProps={{ fontSize: "1.5rem" }}>
+                Home
+              </ListItemText>
             </Link>
           </ListItem>
-          <ListItem sx={{fontSize: '10px'}}>
-            <Link  to={'/about'} onClick={() => setState(false)} className="link">
-              <ListItemText primaryTypographyProps={{fontSize: '1.5rem'}} >About</ListItemText>
+          <ListItem sx={{ fontSize: "10px" }}>
+            <Link
+              to={"/about"}
+              onClick={() => setState(false)}
+              className="link"
+            >
+              <ListItemText primaryTypographyProps={{ fontSize: "1.5rem" }}>
+                About
+              </ListItemText>
             </Link>
           </ListItem>
           <ListItem>
-            <Link to={'/random'} onClick={() => setState(false)} className="link">
-              <ListItemText primaryTypographyProps={{fontSize: '1.5rem'}}>Random cocktail</ListItemText>
+            <Link
+              to={"/random"}
+              onClick={() => setState(false)}
+              className="link"
+            >
+              <ListItemText primaryTypographyProps={{ fontSize: "1.5rem" }}>
+                Random cocktail
+              </ListItemText>
             </Link>
           </ListItem>
-    </List>
+        </List>
       </Drawer>
     </>
   );
