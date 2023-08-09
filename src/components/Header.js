@@ -42,7 +42,7 @@ const Header = () => {
             color={"white"}
             sx={{ fontSize: { xs: "1.5rem", md: "2rem" }, fontWeight: "700" }}
           >
-            Cocktails
+            COCKTAILS
           </Typography>
           <Button
             onClick={() => setState(!state)}
