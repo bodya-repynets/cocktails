@@ -9,6 +9,7 @@ import Random from "./pages/Random";
 const App = () => {
   return (
     <BrowserRouter>
+      <p>hello gay</p>
       <Routes>
         <Route path="/" element={<Main />}>
           <Route index element={<Home />} />
