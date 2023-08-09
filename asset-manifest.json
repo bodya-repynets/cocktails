@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.55e94e1b.css",
-    "main.js": "/static/js/main.5fce87c7.js",
-    "index.html": "/index.html",
-    "main.55e94e1b.css.map": "/static/css/main.55e94e1b.css.map",
-    "main.5fce87c7.js.map": "/static/js/main.5fce87c7.js.map"
+    "main.css": "/bodya-repynets/cocktails/static/css/main.55e94e1b.css",
+    "main.js": "/bodya-repynets/cocktails/static/js/main.5fce87c7.js",
+    "index.html": "/bodya-repynets/cocktails/index.html",
+    "main.55e94e1b.css.map": "/bodya-repynets/cocktails/static/css/main.55e94e1b.css.map",
+    "main.5fce87c7.js.map": "/bodya-repynets/cocktails/static/js/main.5fce87c7.js.map"
   },
   "entrypoints": [
     "static/css/main.55e94e1b.css",
