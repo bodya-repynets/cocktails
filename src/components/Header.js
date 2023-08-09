@@ -71,32 +71,44 @@ const Header = () => {
         </Box>
       </Box>
       <Drawer anchor={"top"} open={state} onClose={() => setState(!state)}>
-        <List>
-          <ListItem>
+        <List
+          sx={{
+            backgroundColor: "primary.main",
+            height: "300px",
+            display: 'flex', 
+            flexDirection: 'column',
+            justifyContent: 'center'
+          }}
+        >
+          <ListItem
+            sx={{
+              justifyContent: "center",
+            }}
+          >
             <Link to={"/"} onClick={() => setState(false)} className="link">
-              <ListItemText primaryTypographyProps={{ fontSize: "1.5rem" }}>
+              <ListItemText
+                primaryTypographyProps={{
+                  fontSize: "1.5rem",
+                  color: "white",
+                }}
+              >
                 Home
               </ListItemText>
             </Link>
           </ListItem>
-          <ListItem sx={{ fontSize: "10px" }}>
-            <Link
-              to={"/about"}
-              onClick={() => setState(false)}
-              className="link"
-            >
-              <ListItemText primaryTypographyProps={{ fontSize: "1.5rem" }}>
-                About
-              </ListItemText>
-            </Link>
-          </ListItem>
-          <ListItem>
+          <ListItem
+            sx={{
+              justifyContent: "center",
+            }}
+          >
             <Link
               to={"/random"}
               onClick={() => setState(false)}
               className="link"
             >
-              <ListItemText primaryTypographyProps={{ fontSize: "1.5rem" }}>
+              <ListItemText
+                primaryTypographyProps={{ fontSize: "1.5rem", color: "white" }}
+              >
                 Random cocktail
               </ListItemText>
             </Link>

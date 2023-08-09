@@ -3,7 +3,6 @@ import App from "./App";
 import fetchCategories from "./utils/fetchCategories";
 import fetchByName from "./utils/fetchByName";
 import fetchByCategory from "./utils/fetchByCategory";
-import fetchRandom from "./utils/fetchRandom";
 
 const GlobalContext = createContext();
 export const useGlobalContext = () => useContext(GlobalContext);
