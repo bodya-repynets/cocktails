@@ -63,7 +63,6 @@ const Random = () => {
                 sx={{
                   marginTop: "20px",
                   backgroundColor: "#f48fb1",
-                  "&:hover": { backgroundColor: "#e91e63" },
                 }}
                 size="large"
                 variant="contained"
