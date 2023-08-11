@@ -3,12 +3,16 @@ import { useState } from "react";
 import React from "react";
 import fetchRandom from "../utils/fetchRandom";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Random = () => {
   const [random, setRandom] = useState({});
+  const navigate = useNavigate();
   const { idDrink, strDrinkThumb, strCategory, strDrink, strAlcoholic } =
     random;
+  const handleClick = () => {
+    navigate(`/cocktails/${idDrink}`);
+  };
   return (
     <Stack
       sx={{ margin: { xs: "50px auto", sm: "100px auto" } }}
@@ -58,18 +62,17 @@ const Random = () => {
             >
               {strAlcoholic}
             </Typography>
-            <Link to={`/cocktails/${idDrink}`}>
-              <Button
-                sx={{
-                  marginTop: "20px",
-                  backgroundColor: "#f48fb1",
-                }}
-                size="large"
-                variant="contained"
-              >
-                find more
-              </Button>
-            </Link>
+            <Button
+              onClick={handleClick}
+              sx={{
+                marginTop: "20px",
+                backgroundColor: "#f48fb1",
+              }}
+              size="large"
+              variant="contained"
+            >
+              find more
+            </Button>
           </Stack>
         </Stack>
       ) : (
